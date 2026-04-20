@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#111827"/>
+  <g fill="#ffffff">
+    <rect x="70" y="200" width="30" height="50" rx="4"/>
+    <rect x="500" y="200" width="30" height="50" rx="4"/>
+    <rect x="100" y="210" width="20" height="30"/>
+    <rect x="480" y="210" width="20" height="30"/>
+    <rect x="120" y="217" width="360" height="16" rx="3"/>
+  </g>
+  <text x="300" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="42" fill="#e63946">WEIGHTLIFTING</text>
+  <text x="300" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Build strength, build character.</text>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#e63946">100 KG</text>
+</svg>

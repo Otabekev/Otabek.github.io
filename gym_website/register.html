@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for an Iron Forge Gym membership.">
+    <title>Iron Forge Gym - Join Now</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body id="top">
+
+    <header>
+        <div class="brand">
+            <img src="assets/logo.svg" alt="Iron Forge Gym Logo">
+            <h1>IRON <span>FORGE</span></h1>
+        </div>
+        <p><em>Forge your body. Forge your future.</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="register.html" class="active">Join Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Membership Registration</h2>
+            <p>
+                Welcome to <strong>Iron Forge Gym</strong>. Fill in the form below and we will set up
+                your membership right away. All fields marked with an asterisk (<em>*</em>) are required.
+                When you submit, a summary page will appear with all your details.
+            </p>
+        </section>
+
+        <section>
+
+            <form id="membershipForm" action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="Male"> Male</label>
+                                <label><input type="radio" name="gender" value="Female"> Female</label>
+                                <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Body Stats</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="age">Age *</label>
+                            <input type="number" id="age" name="age" min="14" max="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" name="weight" min="20" max="300" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" name="height" min="80" max="250">
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Plan</legend>
+
+                    <div class="radio-group">
+                        <label><input type="radio" name="plan" value="Basic"> Basic - 50,000 KRW / month</label>
+                        <label><input type="radio" name="plan" value="Premium" checked> Premium - 90,000 KRW / month</label>
+                        <label><input type="radio" name="plan" value="Elite"> Elite - 160,000 KRW / month</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Class Interests</legend>
+                    <p>Select all the classes you would like to join. You can change this later.</p>
+
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="classes" value="Cardio Blast"> Cardio Blast</label>
+                        <label><input type="checkbox" name="classes" value="Strength &amp; Power"> Strength &amp; Power</label>
+                        <label><input type="checkbox" name="classes" value="Yoga &amp; Flex"> Yoga &amp; Flex</label>
+                        <label><input type="checkbox" name="classes" value="HIIT Circuit"> HIIT Circuit</label>
+                        <label><input type="checkbox" name="classes" value="Open Mat"> Open Mat</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="trainer">Preferred Trainer</label>
+                            <select id="trainer" name="trainer">
+                                <option value="none">No preference</option>
+                                <option value="marcus">Marcus Chen - Strength</option>
+                                <option value="sofia">Sofia Rivera - Yoga &amp; Mobility</option>
+                                <option value="derek">Derek Park - Fat Loss</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time Slot</label>
+                            <select id="time" name="time">
+                                <option value="early">Early morning (06:00 - 09:00)</option>
+                                <option value="midday">Midday (11:00 - 14:00)</option>
+                                <option value="evening">Evening (17:00 - 21:00)</option>
+                                <option value="late">Late night (21:00 - 24:00)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goals">Your Fitness Goals</label>
+                        <textarea id="goals" name="goals" placeholder="Tell us what you want to achieve..."></textarea>
+                    </div>
+
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">Submit Registration</button>
+                    <button type="reset" class="btn btn-secondary">Reset Form</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <section>
+                <h4>Iron Forge Gym</h4>
+                <p>The home of serious training. Built by lifters, for lifters.</p>
+            </section>
+            <section>
+                <h4>Contact</h4>
+                <p>123 Barbell Avenue</p>
+                <p>Seoul, South Korea</p>
+                <p>Phone: +82 02 555 0199</p>
+                <p>Email: info@ironforge.gym</p>
+            </section>
+            <section>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to Top">&uarr;</button>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

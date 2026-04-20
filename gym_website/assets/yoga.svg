@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="yg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1f2b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#yg)"/>
+  <circle cx="480" cy="80" r="40" fill="#e63946" opacity="0.4"/>
+  <g fill="#ffffff">
+    <circle cx="300" cy="200" r="20"/>
+    <path d="M 300 220 Q 260 260 220 300 L 260 310 Q 300 280 300 260 Q 300 280 340 310 L 380 300 Q 340 260 300 220 Z"/>
+    <rect x="290" y="260" width="20" height="40" rx="4"/>
+  </g>
+  <ellipse cx="300" cy="350" rx="140" ry="14" fill="#e63946" opacity="0.8"/>
+  <text x="300" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="#e63946">YOGA &amp; FLEX</text>
+  <text x="300" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#cbd5e1">Find balance. Find yourself.</text>
+</svg>

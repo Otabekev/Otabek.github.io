@@ -3,104 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iron Forge Gym membership plans and pricing.">
-    <title>Iron Forge Gym - Pricing</title>
+    <meta name="description" content="Iron Forge Gym membership pricing — Basic, Premium and Elite plans with no hidden fees. Cancel any time.">
+    <title>Iron Forge Gym — Pricing</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png">
 </head>
 <body id="top">
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="brand">
-            <img src="assets/logo.svg" alt="Iron Forge Gym Logo">
+            <img src="assets/logo.png" alt="Iron Forge Gym Logo">
             <h1>IRON <span>FORGE</span></h1>
         </div>
-        <p><em>Forge your body. Forge your future.</em></p>
+        <p class="tagline"><em>Forge your body. Forge your future.</em></p>
     </header>
 
-    <nav>
+    <!-- ===== NAVIGATION ===== -->
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="classes.html">Classes</a></li>
             <li><a href="trainers.html">Trainers</a></li>
-            <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li><a href="pricing.html" class="active" aria-current="page">Pricing</a></li>
             <li><a href="register.html">Join Now</a></li>
         </ul>
     </nav>
 
-    <main>
+    <!-- ===== MAIN ===== -->
+    <main id="main-content">
 
-        <section>
+        <!-- Intro -->
+        <section class="reveal">
             <h2>Membership Plans</h2>
             <p>
-                Choose the plan that suits your goals and your budget. <strong>All plans include
-                free group classes</strong>, locker access, towel service and 24/7 entry. There are
-                <em>no hidden fees</em> and <em>no long contracts</em>. Cancel anytime with 30 days notice.
+                We offer three flexible plans so you can pick what fits your budget and goals.
+                <strong>Cancel any time</strong>, no hidden fees and no long-term contracts.
+                All plans include unlimited access to our full facility and group classes.
             </p>
         </section>
 
-        <section>
-            <h2>Pick Your Plan</h2>
-            <div class="pricing-table">
+        <!-- Pricing Cards -->
+        <section class="reveal">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-grid">
 
-                <div class="price-card">
+                <article class="price-card">
                     <h3>Basic</h3>
-                    <p class="price">50,000<small> KRW / month</small></p>
+                    <div class="price">₩50,000 <small>/ month</small></div>
                     <ul>
-                        <li>Full gym access</li>
-                        <li>Locker room with showers</li>
-                        <li>Free Wi-Fi</li>
-                        <li>Open from 06:00 to 22:00</li>
+                        <li>Full gym floor access</li>
+                        <li>All group classes included</li>
+                        <li>Locker room &amp; showers</li>
+                        <li>Iron Forge mobile app</li>
+                        <li>Cancel any time</li>
                     </ul>
-                    <p><a href="register.html" class="btn">Sign Up</a></p>
-                </div>
+                    <a href="register.html" class="btn btn-secondary">Get Started</a>
+                </article>
 
-                <div class="price-card popular">
+                <article class="price-card popular">
+                    <div class="badge">Most Popular</div>
                     <h3>Premium</h3>
-                    <p class="price">90,000<small> KRW / month</small></p>
+                    <div class="price">₩90,000 <small>/ month</small></div>
                     <ul>
                         <li>Everything in Basic</li>
-                        <li><strong>24/7 access</strong></li>
-                        <li>Unlimited group classes</li>
-                        <li>One free PT consultation</li>
-                        <li>Free fitness assessment</li>
+                        <li>2 personal training sessions / mo</li>
+                        <li>Nutrition consultation</li>
+                        <li>Towel service included</li>
+                        <li>Guest pass (1 per month)</li>
+                        <li>Priority class booking</li>
                     </ul>
-                    <p><a href="register.html" class="btn">Sign Up</a></p>
-                </div>
+                    <a href="register.html" class="btn">Choose Premium</a>
+                </article>
 
-                <div class="price-card">
+                <article class="price-card">
                     <h3>Elite</h3>
-                    <p class="price">160,000<small> KRW / month</small></p>
+                    <div class="price">₩160,000 <small>/ month</small></div>
                     <ul>
                         <li>Everything in Premium</li>
-                        <li>Four PT sessions per month</li>
-                        <li>Sports massage discount</li>
-                        <li>Free protein shakes</li>
-                        <li>Guest passes (4 per month)</li>
+                        <li>Unlimited PT sessions</li>
+                        <li>Monthly body composition scan</li>
+                        <li>Private locker assigned</li>
+                        <li>Unlimited guest passes</li>
+                        <li>VIP recovery suite access</li>
+                        <li>Dedicated coach hotline</li>
                     </ul>
-                    <p><a href="register.html" class="btn">Sign Up</a></p>
-                </div>
+                    <a href="register.html" class="btn btn-secondary">Go Elite</a>
+                </article>
 
             </div>
         </section>
 
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            <h3>Is there a joining fee?</h3>
-            <p>No. We do not charge a joining fee for any of our plans.</p>
-            <h3>Can I freeze my membership?</h3>
-            <p>Yes. You can freeze your membership for up to <strong>three months</strong> per year, free of charge.</p>
-            <h3>Do you offer student or senior discounts?</h3>
-            <p>Yes. Students and members aged 60 or above receive a <em>20% discount</em> on all plans. Bring valid ID to the front desk.</p>
-            <h3>Can I try the gym before joining?</h3>
-            <p>Of course. Drop in any day this week for a free trial workout, no booking required.</p>
-            <p>
-                <a href="register.html" class="btn">Get Started Today</a>
+        <!-- Comparison Table -->
+        <section class="reveal">
+            <h2>Plan Comparison</h2>
+            <div class="table-scroll">
+                <table class="schedule-table" aria-label="Membership plan comparison">
+                    <thead>
+                        <tr>
+                            <th scope="col">Feature</th>
+                            <th scope="col">Basic</th>
+                            <th scope="col">Premium</th>
+                            <th scope="col">Elite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Full gym access</td>
+                            <td>✓</td><td>✓</td><td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>All group classes</td>
+                            <td>✓</td><td>✓</td><td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Personal training</td>
+                            <td>—</td><td>2 / month</td><td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Nutrition consultation</td>
+                            <td>—</td><td>✓</td><td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Towel service</td>
+                            <td>—</td><td>✓</td><td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Guest passes</td>
+                            <td>—</td><td>1 / month</td><td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Body composition scan</td>
+                            <td>—</td><td>—</td><td>Monthly</td>
+                        </tr>
+                        <tr>
+                            <td>Private locker</td>
+                            <td>—</td><td>—</td><td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>VIP recovery suite</td>
+                            <td>—</td><td>—</td><td>✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monthly fee</strong></td>
+                            <td><strong>₩50,000</strong></td>
+                            <td><strong>₩90,000</strong></td>
+                            <td><strong>₩160,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="reveal">
+            <h2>Pricing FAQ</h2>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    Is there a sign-up or joining fee?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    No. Iron Forge charges zero joining fees. You pay only your monthly membership rate, starting from
+                    the date you activate your account. Your first week is free on any plan.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    Can I upgrade or downgrade my plan?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    Yes, plan changes take effect from the start of your next billing cycle. Visit the front desk or
+                    use the Iron Forge app to change your plan at any time.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    How does cancellation work?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    You may cancel any time with no penalty. If you cancel before the 25th of the month, your
+                    membership remains active until the end of that month. No partial refunds are issued.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    Are there student or corporate discounts?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    Yes. Students with a valid university ID receive 20% off Basic and Premium plans. Corporate groups
+                    of 5 or more receive 15% off any plan. Contact us at info@ironforge.gym for corporate enquiries.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="reveal cta-section">
+            <h2>Start Your Free Week Today</h2>
+            <p class="cta-copy narrow">
+                No credit card required. Try Iron Forge Gym for 7 days and experience the difference yourself.
             </p>
+            <a href="register.html" class="btn">Claim Free Week</a>
         </section>
 
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-inner">
             <section>
@@ -110,9 +228,12 @@
             <section>
                 <h4>Contact</h4>
                 <p>123 Barbell Avenue</p>
-                <p>Seoul, South Korea</p>
-                <p>Phone: +82 02 555 0199</p>
-                <p>Email: info@ironforge.gym</p>
+                <p>Mapo-gu, Seoul, South Korea</p>
+                <p>Phone: <a href="tel:+82025550199">+82 02 555 0199</a></p>
+
+<p>Email: <a href="mailto:info@ironforge.gym?subject=Gym Inquiry&body=Hello, I want to know about membership.">
+    info@ironforge.gym
+</a></p>
             </section>
             <section>
                 <h4>Quick Links</h4>
@@ -121,14 +242,23 @@
                     <li><a href="classes.html">Classes</a></li>
                     <li><a href="trainers.html">Trainers</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="register.html">Join Now</a></li>
                 </ul>
             </section>
-            <p class="copyright">&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <section>
+                <h4>Hours</h4>
+                <p>Open <strong>24 hours</strong>, 7 days a week</p>
+                <p>Staff on-site: 06:00 – 22:00</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <p>Designed for Web Programming Midterm Project</p>
         </div>
     </footer>
 
-    <button id="backToTop" title="Back to Top">&uarr;</button>
+    <button id="backToTop" title="Back to Top" aria-label="Back to top">&uarr;</button>
+    <div id="toast" role="status" aria-live="polite"></div>
 
     <script src="js/scripts.js"></script>
 </body>

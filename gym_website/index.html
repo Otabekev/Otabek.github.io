@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iron Forge Gym - a premium gym membership club offering cardio, weightlifting, yoga and personal training.">
-    <title>Iron Forge Gym - Home</title>
+    <meta name="description" content="Iron Forge Gym — a premium 24/7 gym in Seoul offering cardio, strength, yoga and personal training memberships.">
+    <title>Iron Forge Gym — Home</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png">
 </head>
 <body id="top">
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="brand">
-            <img src="assets/logo.svg" alt="Iron Forge Gym Logo">
+            <img src="assets/logo.png" alt="Iron Forge Gym Logo">
             <h1>IRON <span>FORGE</span></h1>
         </div>
-        <p><em>Forge your body. Forge your future.</em></p>
+        <p class="tagline"><em>Forge your body. Forge your future.</em></p>
     </header>
 
-    <nav>
+    <!-- ===== NAVIGATION ===== -->
+    <nav aria-label="Main navigation">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
             <li><a href="classes.html">Classes</a></li>
             <li><a href="trainers.html">Trainers</a></li>
             <li><a href="pricing.html">Pricing</a></li>
@@ -28,13 +32,51 @@
         </ul>
     </nav>
 
-    <main>
+    <!-- ===== MAIN ===== -->
+    <main id="main-content">
 
-        <figure class="hero">
-            <img src="assets/hero.svg" alt="Iron Forge Gym hero banner">
+        <!-- Hero Banner -->
+        <figure class="hero reveal">
+            <img src="assets/hero.png" alt="Iron Forge Gym training floor with premium equipment">
+            <figcaption class="hero-overlay">
+                <h2>TRAIN LIKE YOU <span>MEAN IT</span></h2>
+                <p>Seoul's most dedicated 24/7 training facility. Premium equipment, certified coaches, zero excuses.</p>
+                <div>
+                    <a href="register.html" class="btn">Join Today</a>
+                    <a href="pricing.html" class="btn btn-secondary btn-spaced">See Plans</a>
+                </div>
+            </figcaption>
         </figure>
 
-        <section>
+        <!-- Animated Stats -->
+        <section class="reveal" aria-label="Gym statistics">
+            <h2>Iron Forge by the Numbers</h2>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-number" data-count="200" data-suffix="+">0</div>
+                    <div class="stat-label">Machines</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-count="24" data-suffix="/7">0</div>
+                    <div class="stat-label">Open Hours</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Group Classes</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-count="4500" data-suffix="+">0</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-count="8">0</div>
+                    <div class="stat-label">Expert Trainers</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section class="reveal">
             <h2>Welcome to Iron Forge Gym</h2>
             <p>
                 <strong>Iron Forge Gym</strong> is more than a place to exercise. It is a community of people who
@@ -43,20 +85,22 @@
                 <em>equipment</em>, the <em>coaches</em> and the <em>atmosphere</em> to help you get there.
             </p>
             <p>
-                Our facility is open 24 hours a day, seven days a week. Members enjoy full access to over
-                200 pieces of premium equipment, free group classes, locker rooms with showers and
-                friendly staff who remember your name.
+                Our facility is open <strong>24 hours a day, seven days a week</strong>. Members enjoy full access
+                to over 200 pieces of premium equipment, free group classes, locker rooms with showers and
+                a team of friendly staff who remember your name.
             </p>
             <p>
                 <a href="register.html" class="btn">Become a Member</a>
-                <a href="pricing.html" class="btn btn-secondary">See Plans</a>
+                <a href="classes.html" class="btn btn-secondary btn-spaced">Explore Classes</a>
             </p>
         </section>
 
-        <section>
+        <!-- Why Choose Us -->
+        <section class="reveal">
             <h2>Why Choose Us</h2>
             <div class="features">
                 <article>
+                    <span class="icon" aria-hidden="true">🏋️</span>
                     <h3>Modern Equipment</h3>
                     <p>
                         <strong>Over 200 machines</strong> including free weights, cable stations,
@@ -64,13 +108,15 @@
                     </p>
                 </article>
                 <article>
+                    <span class="icon" aria-hidden="true">🎓</span>
                     <h3>Certified Trainers</h3>
                     <p>
                         Every coach on our team holds a recognised certification and at least
-                        <em>five years of experience</em> working with real clients.
+                        <em>five years of hands-on experience</em> with real clients.
                     </p>
                 </article>
                 <article>
+                    <span class="icon" aria-hidden="true">🕐</span>
                     <h3>24/7 Access</h3>
                     <p>
                         Life is busy. Your gym should not be. Train on <strong>your</strong> schedule,
@@ -78,29 +124,64 @@
                     </p>
                 </article>
                 <article>
+                    <span class="icon" aria-hidden="true">🤸</span>
                     <h3>Group Classes</h3>
                     <p>
-                        From high intensity spin sessions to calming yoga, our group classes are
-                        included with every membership plan at no extra cost.
+                        From high-intensity spin sessions to calming yoga, our group classes are
+                        <em>included with every membership plan</em> at no extra cost.
+                    </p>
+                </article>
+                <article>
+                    <span class="icon" aria-hidden="true">🚿</span>
+                    <h3>Premium Facilities</h3>
+                    <p>
+                        Enjoy <strong>modern locker rooms</strong>, showers, towel service and a
+                        protein bar serving fresh smoothies and post-workout nutrition.
+                    </p>
+                </article>
+                <article>
+                    <span class="icon" aria-hidden="true">📱</span>
+                    <h3>Member App</h3>
+                    <p>
+                        Book classes, track your workouts and chat with your trainer using the
+                        <em>Iron Forge member app</em> — available on iOS and Android.
                     </p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Membership That Works for You</h2>
-            <p>
-                We offer three flexible plans so that you can pick the one that fits your budget and
-                your goals. Cancel any time, no hidden fees and no long contracts. Your progress is
-                what matters most to us.
+        <!-- Testimonials -->
+        <section class="reveal">
+            <h2>What Our Members Say</h2>
+            <div class="testimonials">
+                <article class="testimonial">
+                    <p>I lost 18 kg in five months thanks to the coaches here. The support is unlike anything at a regular gym.</p>
+                    <div class="author">— Ji-won K., Premium Member</div>
+                </article>
+                <article class="testimonial">
+                    <p>24/7 access is a game changer. I train at 6 am before my hospital shift and the place is already energised.</p>
+                    <div class="author">— Dr. Soo-hyun L., Elite Member</div>
+                </article>
+                <article class="testimonial">
+                    <p>The yoga classes alone are worth the membership. Sofia is an incredible instructor who adapts to every level.</p>
+                    <div class="author">— Priya M., Basic Member</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="reveal cta-section">
+            <h2>Ready to Start Your Journey?</h2>
+            <p class="cta-copy">
+                Join over 4,500 members who already train at Iron Forge. Your first week is <strong>free</strong>.
+                No commitment, no hidden fees.
             </p>
-            <p>
-                <a href="pricing.html" class="btn">View Pricing</a>
-            </p>
+            <a href="register.html" class="btn">Start Free Trial</a>
         </section>
 
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-inner">
             <section>
@@ -110,9 +191,12 @@
             <section>
                 <h4>Contact</h4>
                 <p>123 Barbell Avenue</p>
-                <p>Seoul, South Korea</p>
-                <p>Phone: +82 02 555 0199</p>
-                <p>Email: info@ironforge.gym</p>
+                <p>Mapo-gu, Seoul, South Korea</p>
+                <p>Phone: <a href="tel:+82025550199">+82 02 555 0199</a></p>
+
+<p>Email: <a href="mailto:info@ironforge.gym?subject=Gym Inquiry&body=Hello, I want to know about membership.">
+    info@ironforge.gym
+</a></p>
             </section>
             <section>
                 <h4>Quick Links</h4>
@@ -121,14 +205,24 @@
                     <li><a href="classes.html">Classes</a></li>
                     <li><a href="trainers.html">Trainers</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="register.html">Join Now</a></li>
                 </ul>
             </section>
-            <p class="copyright">&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <section>
+                <h4>Hours</h4>
+                <p>Open <strong>24 hours</strong>, 7 days a week</p>
+                <p>Staff on-site: 06:00 – 22:00</p>
+                <p>Holidays: Open (limited staff)</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <p>Designed for Web Programming Midterm Project</p>
         </div>
     </footer>
 
-    <button id="backToTop" title="Back to Top">&uarr;</button>
+    <button id="backToTop" title="Back to Top" aria-label="Back to top">&uarr;</button>
+    <div id="toast" role="status" aria-live="polite"></div>
 
     <script src="js/scripts.js"></script>
 </body>

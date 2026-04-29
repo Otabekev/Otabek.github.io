@@ -3,103 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet the certified personal trainers at Iron Forge Gym.">
-    <title>Iron Forge Gym - Trainers</title>
+    <meta name="description" content="Meet the expert personal trainers at Iron Forge Gym — certified coaches specialising in strength, fat loss, yoga and athletic performance.">
+    <title>Iron Forge Gym — Trainers</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png">
 </head>
 <body id="top">
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="brand">
-            <img src="assets/logo.svg" alt="Iron Forge Gym Logo">
+            <img src="assets/logo.png" alt="Iron Forge Gym Logo">
             <h1>IRON <span>FORGE</span></h1>
         </div>
-        <p><em>Forge your body. Forge your future.</em></p>
+        <p class="tagline"><em>Forge your body. Forge your future.</em></p>
     </header>
 
-    <nav>
+    <!-- ===== NAVIGATION ===== -->
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="classes.html">Classes</a></li>
-            <li><a href="trainers.html" class="active">Trainers</a></li>
+            <li><a href="trainers.html" class="active" aria-current="page">Trainers</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="register.html">Join Now</a></li>
         </ul>
     </nav>
 
-    <main>
+    <!-- ===== MAIN ===== -->
+    <main id="main-content">
 
-        <section>
+        <!-- Intro -->
+        <section class="reveal">
             <h2>Meet Our Trainers</h2>
             <p>
-                Our team of <strong>certified personal trainers</strong> has helped thousands of members
-                reach their goals. Each coach brings a unique background, from Olympic weightlifting to
-                yoga therapy, so there is always someone whose style matches <em>your</em> needs.
-            </p>
-            <p>
-                Book a free consultation at the front desk, or pick your favourite coach directly on
-                the <a href="register.html">registration form</a>.
+                Every coach at <strong>Iron Forge Gym</strong> holds an internationally recognised
+                fitness certification and has at least <em>five years of hands-on coaching experience</em>.
+                They work with members of all levels — from complete beginners to competitive athletes —
+                to design personalised programmes and deliver real, measurable results.
             </p>
         </section>
 
-        <section>
-            <h2>The Team</h2>
-            <div class="trainer-grid">
+        <!-- Trainer Cards -->
+        <section class="reveal">
+            <h2>Our Coaching Team</h2>
+            <div class="card-grid">
 
-                <div class="trainer-card">
-                    <img src="assets/trainer1.svg" alt="Coach Marcus">
-                    <article>
+                <article class="card">
+                    <img src="assets/trainer1.png" alt="Marcus Chen, Strength and Conditioning Coach">
+                    <div class="card-body">
+                        <span class="card-tag">Strength</span>
                         <h3>Marcus Chen</h3>
-                        <p><strong>Specialty:</strong> Strength and powerlifting</p>
-                        <p><em>10 years of experience</em>. Former national bench press champion. Certified
-                        strength coach who has helped dozens of members hit their first 200 kg deadlift.</p>
-                    </article>
-                </div>
+                        <p><strong>Speciality:</strong> Strength &amp; Conditioning</p>
+                        <p>
+                            Former national powerlifting champion with a <em>NSCA-CSCS</em> certification.
+                            Marcus has coached over 300 clients and holds the gym record for the 100 kg squat programme.
+                        </p>
+                        <p class="trainer-meta"><strong>Experience:</strong> 9 years &nbsp;|&nbsp; <strong>Languages:</strong> Korean, English, Mandarin</p>
 
-                <div class="trainer-card">
-                    <img src="assets/trainer2.svg" alt="Coach Sofia">
-                    <article>
+                        <div class="skill-list">
+                            <div class="skill-label">Strength</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="97"></div></div>
+                            <div class="skill-label stacked">Programming</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="90"></div></div>
+                            <div class="skill-label stacked">Nutrition</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/trainer2.png" alt="Sofia Rivera, Yoga and Mobility Coach">
+                    <div class="card-body">
+                        <span class="card-tag">Yoga &amp; Mobility</span>
                         <h3>Sofia Rivera</h3>
-                        <p><strong>Specialty:</strong> Yoga, mobility and rehab</p>
-                        <p><em>8 years of experience</em>. Registered yoga therapist who blends
-                        traditional yoga with modern mobility work. Perfect for anyone recovering from
-                        injury or just getting started.</p>
-                    </article>
-                </div>
+                        <p><strong>Speciality:</strong> Yoga, Mobility &amp; Recovery</p>
+                        <p>
+                            Certified <em>RYT-500</em> yoga instructor and sports physiotherapist. Sofia's
+                            classes combine Eastern mindfulness with Western sports science for unmatched flexibility gains.
+                        </p>
+                        <p class="trainer-meta"><strong>Experience:</strong> 7 years &nbsp;|&nbsp; <strong>Languages:</strong> Korean, English, Spanish</p>
 
-                <div class="trainer-card">
-                    <img src="assets/trainer3.svg" alt="Coach Derek">
-                    <article>
+                        <div class="skill-list">
+                            <div class="skill-label">Flexibility</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="98"></div></div>
+                            <div class="skill-label stacked">Recovery</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="95"></div></div>
+                            <div class="skill-label stacked">Mindfulness</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="92"></div></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/trainer3.png" alt="Derek Park, Fat Loss and Athletic Performance Coach">
+                    <div class="card-body">
+                        <span class="card-tag">Fat Loss</span>
                         <h3>Derek Park</h3>
-                        <p><strong>Specialty:</strong> Fat loss and conditioning</p>
-                        <p><em>6 years of experience</em>. Ex-military fitness instructor who has guided
-                        hundreds of clients through body transformations. Loves HIIT, metcons and long runs.</p>
-                    </article>
-                </div>
+                        <p><strong>Speciality:</strong> Fat Loss &amp; Athletic Performance</p>
+                        <p>
+                            Ex-national football player turned <em>ACSM-certified</em> personal trainer. Derek specialises
+                            in body recomposition and sports-specific conditioning for competitive athletes.
+                        </p>
+                        <p class="trainer-meta"><strong>Experience:</strong> 6 years &nbsp;|&nbsp; <strong>Languages:</strong> Korean, English</p>
+
+                        <div class="skill-list">
+                            <div class="skill-label">Conditioning</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="93"></div></div>
+                            <div class="skill-label stacked">Nutrition</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="88"></div></div>
+                            <div class="skill-label stacked">Motivation</div>
+                            <div class="stat-bar"><div class="stat-bar-fill" data-width="96"></div></div>
+                        </div>
+                    </div>
+                </article>
 
             </div>
         </section>
 
-        <section>
-            <h2>Personal Training Packages</h2>
+        <!-- Personal Training Section -->
+        <section class="reveal">
+            <h2>Personal Training</h2>
             <p>
-                <strong>Single session:</strong> 60,000 KRW for a 60 minute one on one session.
+                Group classes are great, but nothing beats a <strong>one-on-one session</strong> tailored entirely to
+                your body, your goals and your schedule. Our personal trainers design custom 8, 12 or 16-week
+                programmes with weekly check-ins, progress tracking and nutritional guidance.
             </p>
-            <p>
-                <strong>10 session pack:</strong> 500,000 KRW (save 100,000 KRW). Valid for 6 months.
+            <div class="features features-spaced">
+                <article>
+                    <h3>Initial Assessment</h3>
+                    <p>Every new PT client receives a complimentary fitness assessment covering strength, mobility, cardiovascular endurance and body composition.</p>
+                </article>
+                <article>
+                    <h3>Custom Programme</h3>
+                    <p>Your trainer builds a periodised training block aligned with your specific goals, available equipment and weekly availability.</p>
+                </article>
+                <article>
+                    <h3>Ongoing Support</h3>
+                    <p>Weekly check-ins, form video reviews and direct messaging access to your trainer through the <em>Iron Forge app</em>.</p>
+                </article>
+            </div>
+            <p class="top-spaced">
+                <a href="register.html" class="btn">Book a PT Session</a>
             </p>
-            <p>
-                <strong>Monthly unlimited:</strong> 900,000 KRW. Train with your coach as many times as
-                you like within a calendar month. Perfect for <em>serious transformations</em>.
-            </p>
-            <p>
-                <a href="register.html" class="btn">Start Training</a>
-            </p>
+        </section>
+
+        <!-- Certifications -->
+        <section class="reveal">
+            <h2>Our Credentials</h2>
+            <p>All Iron Forge trainers hold certifications from at least one of the following organisations:</p>
+            <div class="features">
+                <article>
+                    <h3>NSCA</h3>
+                    <p>National Strength and Conditioning Association — the gold standard for strength coaches worldwide.</p>
+                </article>
+                <article>
+                    <h3>ACSM</h3>
+                    <p>American College of Sports Medicine — recognised globally for evidence-based exercise science.</p>
+                </article>
+                <article>
+                    <h3>Yoga Alliance</h3>
+                    <p>International registry for yoga teachers. Our yoga instructors hold RYT-200 or RYT-500 credentials.</p>
+                </article>
+                <article>
+                    <h3>KFCA</h3>
+                    <p>Korea Fitness Certification Authority — the leading domestic body for Korean fitness professionals.</p>
+                </article>
+            </div>
         </section>
 
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-inner">
             <section>
@@ -109,9 +186,12 @@
             <section>
                 <h4>Contact</h4>
                 <p>123 Barbell Avenue</p>
-                <p>Seoul, South Korea</p>
-                <p>Phone: +82 02 555 0199</p>
-                <p>Email: info@ironforge.gym</p>
+                <p>Mapo-gu, Seoul, South Korea</p>
+                <p>Phone: <a href="tel:+82025550199">+82 02 555 0199</a></p>
+
+<p>Email: <a href="mailto:info@ironforge.gym?subject=Gym Inquiry&body=Hello, I want to know about membership.">
+    info@ironforge.gym
+</a></p>
             </section>
             <section>
                 <h4>Quick Links</h4>
@@ -120,14 +200,23 @@
                     <li><a href="classes.html">Classes</a></li>
                     <li><a href="trainers.html">Trainers</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="register.html">Join Now</a></li>
                 </ul>
             </section>
-            <p class="copyright">&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <section>
+                <h4>Hours</h4>
+                <p>Open <strong>24 hours</strong>, 7 days a week</p>
+                <p>Staff on-site: 06:00 – 22:00</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <p>Designed for Web Programming Midterm Project</p>
         </div>
     </footer>
 
-    <button id="backToTop" title="Back to Top">&uarr;</button>
+    <button id="backToTop" title="Back to Top" aria-label="Back to top">&uarr;</button>
+    <div id="toast" role="status" aria-live="polite"></div>
 
     <script src="js/scripts.js"></script>
 </body>

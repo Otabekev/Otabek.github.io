@@ -3,128 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iron Forge Gym classes - cardio, weightlifting, yoga, HIIT and more.">
-    <title>Iron Forge Gym - Classes</title>
+    <meta name="description" content="Explore all group fitness classes at Iron Forge Gym — cardio, HIIT, yoga, strength and more, included with every membership.">
+    <title>Iron Forge Gym — Classes</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png">
 </head>
 <body id="top">
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="brand">
-            <img src="assets/logo.svg" alt="Iron Forge Gym Logo">
+            <img src="assets/logo.png" alt="Iron Forge Gym Logo">
             <h1>IRON <span>FORGE</span></h1>
         </div>
-        <p><em>Forge your body. Forge your future.</em></p>
+        <p class="tagline"><em>Forge your body. Forge your future.</em></p>
     </header>
 
-    <nav>
+    <!-- ===== NAVIGATION ===== -->
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="classes.html" class="active">Classes</a></li>
+            <li><a href="classes.html" class="active" aria-current="page">Classes</a></li>
             <li><a href="trainers.html">Trainers</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="register.html">Join Now</a></li>
         </ul>
     </nav>
 
-    <main>
+    <!-- ===== MAIN ===== -->
+    <main id="main-content">
 
-        <section>
-            <h2>Our Group Classes</h2>
+        <!-- Page Intro -->
+        <section class="reveal">
+            <h2>Group Fitness Classes</h2>
             <p>
-                Group training is one of the most fun and effective ways to stay consistent with your
-                fitness goals. At <strong>Iron Forge Gym</strong> we offer more than <strong>40 classes
-                every week</strong>, led by experienced instructors who know how to push you safely.
-                All classes are <em>included with every membership plan</em>.
+                Every <strong>Iron Forge</strong> membership includes unlimited access to our group classes.
+                From explosive HIIT circuits to restorative yoga, there is something for every fitness level
+                and goal. All sessions are led by <em>certified instructors</em> in purpose-built studios.
             </p>
         </section>
 
-        <section>
-            <h2>Class Catalogue</h2>
-            <div class="class-grid">
+        <!-- Class Cards -->
+        <section class="reveal">
+            <h2>Our Classes</h2>
+            <div class="card-grid">
 
-                <div class="class-card">
-                    <img src="assets/cardio.svg" alt="Cardio class illustration">
-                    <article>
+                <article class="card">
+                    <img src="assets/cardio.png" alt="Cardio Blast class in session">
+                    <div class="card-body">
+                        <span class="card-tag">High Intensity</span>
                         <h3>Cardio Blast</h3>
-                        <p>
-                            A <strong>45 minute</strong> high-energy class mixing running, cycling
-                            and rowing intervals. Perfect for burning calories and improving
-                            cardiovascular health.
-                        </p>
-                        <p><em>Intensity: high</em></p>
-                    </article>
-                </div>
+                        <p>A 45-minute heart-pumping session combining treadmill intervals, rowing and jump rope to torch calories and build endurance.</p>
+                        <p><strong>Duration:</strong> 45 min &nbsp;|&nbsp; <strong>Level:</strong> All levels</p>
+                    </div>
+                </article>
 
-                <div class="class-card">
-                    <img src="assets/weights.svg" alt="Weightlifting class illustration">
-                    <article>
+                <article class="card">
+                    <img src="assets/strength.png" alt="Strength and Power class with barbells">
+                    <div class="card-body">
+                        <span class="card-tag">Strength</span>
                         <h3>Strength &amp; Power</h3>
-                        <p>
-                            Barbell based class focused on the <strong>big lifts</strong>: squat,
-                            bench press and deadlift. Build real strength with proper form.
-                        </p>
-                        <p><em>Intensity: medium to high</em></p>
-                    </article>
-                </div>
+                        <p>Barbell-focused progressive overload training. Build serious muscle and improve your compound lifts under expert coaching.</p>
+                        <p><strong>Duration:</strong> 60 min &nbsp;|&nbsp; <strong>Level:</strong> Intermediate</p>
+                    </div>
+                </article>
 
-                <div class="class-card">
-                    <img src="assets/yoga.svg" alt="Yoga class illustration">
-                    <article>
+                <article class="card">
+                    <img src="assets/yoga.png" alt="Yoga and flexibility class">
+                    <div class="card-body">
+                        <span class="card-tag">Recovery</span>
                         <h3>Yoga &amp; Flex</h3>
-                        <p>
-                            Restore flexibility, improve posture and calm the mind. A gentle class
-                            suitable for <em>all levels</em>, including absolute beginners.
-                        </p>
-                        <p><em>Intensity: low</em></p>
-                    </article>
-                </div>
+                        <p>Deep stretching, breath work and mobility flows to aid recovery, reduce injury risk and improve overall range of motion.</p>
+                        <p><strong>Duration:</strong> 50 min &nbsp;|&nbsp; <strong>Level:</strong> All levels</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/HIIT.png" alt="HIIT Circuit training class">
+                    <div class="card-body">
+                        <span class="card-tag">High Intensity</span>
+                        <h3>HIIT Circuit</h3>
+                        <p>Station-based high-intensity intervals — kettlebells, battle ropes and body-weight drills — designed for maximum calorie burn in 40 minutes.</p>
+                        <p><strong>Duration:</strong> 40 min &nbsp;|&nbsp; <strong>Level:</strong> Advanced</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/openmat.png" alt="Open mat free training session">
+                    <div class="card-body">
+                        <span class="card-tag">Open Access</span>
+                        <h3>Open Mat</h3>
+                        <p>Unstructured studio time where members can work on their own programmes or ask instructors for tips and form corrections.</p>
+                        <p><strong>Duration:</strong> 60 min &nbsp;|&nbsp; <strong>Level:</strong> All levels</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/cycle.png" alt="Spin cycling class">
+                    <div class="card-body">
+                        <span class="card-tag">Cardio</span>
+                        <h3>Spin Cycle</h3>
+                        <p>High-energy indoor cycling to club music. Burn up to 700 kcal per session while building lower-body power and cardiovascular fitness.</p>
+                        <p><strong>Duration:</strong> 45 min &nbsp;|&nbsp; <strong>Level:</strong> All levels</p>
+                    </div>
+                </article>
 
             </div>
         </section>
 
-        <section>
+        <!-- Weekly Schedule -->
+        <section class="reveal">
             <h2>Weekly Schedule</h2>
-            <p>A snapshot of our most popular time slots. Full schedule is available at the front desk.</p>
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Morning</th>
-                        <th>Evening</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>Cardio Blast 07:00</td>
-                        <td>Strength &amp; Power 19:00</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>Yoga &amp; Flex 08:00</td>
-                        <td>Cardio Blast 18:30</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Strength &amp; Power 06:30</td>
-                        <td>Yoga &amp; Flex 20:00</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>HIIT Circuit 09:00</td>
-                        <td>Open Mat 18:00</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>
-                <a href="register.html" class="btn">Reserve Your Spot</a>
-            </p>
+            <p>All classes run weekly. Book your spot through the <strong>Iron Forge app</strong> or at the front desk.</p>
+
+            <div class="table-scroll">
+                <table class="schedule-table" aria-label="Weekly class schedule">
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Friday</th>
+                            <th scope="col">Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>07:00</strong></td>
+                            <td>Cardio Blast</td>
+                            <td>HIIT Circuit</td>
+                            <td>Cardio Blast</td>
+                            <td>Spin Cycle</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10:00</strong></td>
+                            <td>Yoga &amp; Flex</td>
+                            <td>Open Mat</td>
+                            <td>Yoga &amp; Flex</td>
+                            <td>Strength &amp; Power</td>
+                        </tr>
+                        <tr>
+                            <td><strong>13:00</strong></td>
+                            <td>Strength &amp; Power</td>
+                            <td>Spin Cycle</td>
+                            <td>Open Mat</td>
+                            <td>HIIT Circuit</td>
+                        </tr>
+                        <tr>
+                            <td><strong>18:00</strong></td>
+                            <td>HIIT Circuit</td>
+                            <td>Cardio Blast</td>
+                            <td>Strength &amp; Power</td>
+                            <td>Open Mat</td>
+                        </tr>
+                        <tr>
+                            <td><strong>20:00</strong></td>
+                            <td>Spin Cycle</td>
+                            <td>Yoga &amp; Flex</td>
+                            <td>HIIT Circuit</td>
+                            <td>Yoga &amp; Flex</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="reveal">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    Do I need to book classes in advance?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    Yes, we recommend booking at least 24 hours in advance using the app or front desk. Walk-ins are welcome
+                    if spaces remain, but popular classes like HIIT Circuit and Spin Cycle fill up fast.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    Are classes included in all membership plans?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    Yes. Every membership tier — Basic, Premium and Elite — includes unlimited access to all group classes
+                    at no extra charge. There are no hidden fees.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    What should I bring to a class?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    Bring clean indoor training shoes, comfortable workout clothes and a water bottle. Towels are available
+                    at the front desk. All class equipment is provided by the gym.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                    Can beginners join any class?
+                    <span class="chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="accordion-content" role="region">
+                    Most classes are open to all levels. Cardio Blast, Yoga &amp; Flex, Open Mat and Spin Cycle are particularly
+                    beginner-friendly. Strength &amp; Power and HIIT Circuit are listed as Intermediate/Advanced — we advise new
+                    members to take an intro session first.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="reveal cta-section cta-section-plain">
+            <h2>Ready to Book Your First Class?</h2>
+            <p class="cta-copy compact">Become a member and access all classes from day one.</p>
+            <a href="register.html" class="btn">Join Iron Forge</a>
         </section>
 
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-inner">
             <section>
@@ -134,9 +240,12 @@
             <section>
                 <h4>Contact</h4>
                 <p>123 Barbell Avenue</p>
-                <p>Seoul, South Korea</p>
-                <p>Phone: +82 02 555 0199</p>
-                <p>Email: info@ironforge.gym</p>
+                <p>Mapo-gu, Seoul, South Korea</p>
+                <p>Phone: <a href="tel:+82025550199">+82 02 555 0199</a></p>
+
+<p>Email: <a href="mailto:info@ironforge.gym?subject=Gym Inquiry&body=Hello, I want to know about membership.">
+    info@ironforge.gym
+</a></p>
             </section>
             <section>
                 <h4>Quick Links</h4>
@@ -145,14 +254,23 @@
                     <li><a href="classes.html">Classes</a></li>
                     <li><a href="trainers.html">Trainers</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="register.html">Join Now</a></li>
                 </ul>
             </section>
-            <p class="copyright">&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <section>
+                <h4>Hours</h4>
+                <p>Open <strong>24 hours</strong>, 7 days a week</p>
+                <p>Staff on-site: 06:00 – 22:00</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iron Forge Gym. All rights reserved.</p>
+            <p>Designed for Web Programming Midterm Project</p>
         </div>
     </footer>
 
-    <button id="backToTop" title="Back to Top">&uarr;</button>
+    <button id="backToTop" title="Back to Top" aria-label="Back to top">&uarr;</button>
+    <div id="toast" role="status" aria-live="polite"></div>
 
     <script src="js/scripts.js"></script>
 </body>
